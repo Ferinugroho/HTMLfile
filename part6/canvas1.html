@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas>
+
+    <script>
+      //Untuk merefer canvas 2d di layar
+      var ctx = document.getElementsById("myCanvas").getContext("2d");
+
+      ctx.fillStyle = "#f80";
+      ctx.fillRect(0, 0, ctx.canvas.width, ctx.canvas.height);
+
+      ctx.fillStyle = "#d10";
+      ctx.fillText("Contoh penggunaan canvas", 100, 120);
+    </script>
+  </body>
+</html>

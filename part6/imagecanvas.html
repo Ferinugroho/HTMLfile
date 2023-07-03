@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: beige;
+      }
+
+      #canvas {
+        border: 1px solid red;
+      }
+    </style>
+
+    <script>
+      window.onload = function () {
+        //untuk membuat variabel yang terkait di js canvas
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        //menggunakan isian pattern
+        var patternImage = new Image();
+        // PENTING: selalu gunakan .onload untuk memastikan gambar sudah di loaded
+        // sebelum menggunakan fungsi .createPattern
+        patternImage.onload = function () {
+          //membuat objek pattern
+          var pattern = ctx.createPattern(patternImage, "repeat");
+          //setting fillstyle pattern
+          ctx.fillStyle = pattern;
+          //isian pattern di dalam sebuah kotak/rectangle
+          ctx.fillRect(50, 50, 150, 100);
+          ctx.strokeRect(50, 50, 150, 100);
+        };
+        patternImage.src = "http://i.stack.imgur.com/K9EZl.png";
+      }; //akhir dari window.onload
+    </script>
+  </head>
+  <body>
+    <canvas id="canvas" width="325" height="250"></canvas>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: beige;
+      }
+
+      #canvas {
+        border: 1px solid red;
+      }
+    </style>
+
+    <script>
+      window.onload = function () {
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var img = new Image();
+        img.onload = start;
+        img.src = "http://i.stack.imgur.com/1CqWf.jpg";
+        function start() {
+          //menggambar segitiga/atau pola
+          ctx.beginPath();
+          ctx.moveTo(75, 50);
+          ctx.lineTo(125, 100);
+          ctx.lineTo(25, 100);
+          ctx.lineTo(75, 50);
+
+          ctx.clip();
+          ctx.drawImage(img, 0, 0);
+        }
+      };
+    </script>
+  </head>
+  <body>
+    <canvas id="canvas" width="150" height="150"></canvas>
+  </body>
+</html>
