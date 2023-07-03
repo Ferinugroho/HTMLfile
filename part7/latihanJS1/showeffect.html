@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".view").click(function () {
+          $("h3").show(2000);
+        });
+        $(".hide").click(function () {
+          $("h3").hide(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h3>Ini teks dapat di sembunyikan (hidden) dan ditampilkan (show)</h3>
+    <br />
+    <button class="view">Click to View</button>
+    <button class="hide">Click to hide</button>
+  </body>
+</html>

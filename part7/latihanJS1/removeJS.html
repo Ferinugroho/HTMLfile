@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remove JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $("#div1").remove();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#btn2").click(function () {
+          $("#div2").empty();
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div
+      id="div1"
+      style="
+        height: 100px;
+        width: 300px;
+        border: 1px solid black;
+        background-color: skyblue;
+      "
+    >
+      "hdjkahsdjhasdhasjkdhaskda"
+      <p>hdaskjhdjakshdjkashd</p>
+      <p>ahduaishduahsduiahsd</p>
+    </div>
+    <div
+      id="div2"
+      style="
+        height: 100px;
+        width: 300px;
+        border: 1px solid black;
+        background-color: skyblue;
+      "
+    >
+      "hdjkahsdjhasdhasjkdhaskda"
+      <p>hdaskjhdjakshdjkashd</p>
+      <p>ahduaishduahsduiahsd</p>
+    </div>
+    <br />
+    <button id="btn1">Remove div element</button>
+    <button id="btn2">Empty div element</button>
+  </body>
+</html>
