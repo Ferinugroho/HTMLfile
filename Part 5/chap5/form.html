@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Pada HTML</title>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <th colspan="2">Pesan Makanan</th>
+        </tr>
+          <td>Nama</td>
+          <td>
+            <input type="text" name="username" placeholder="Masukkan nama" required>
+            </input>
+          </td>
+          <tr>
+            <td>Tanggal Pesan</td>
+            <td>
+              <input type="date" id="bookingdate" required>
+              </input>
+            </td>
+            <tr>
+              <td>
+                Menu Makanan
+              </td>
+              <td>
+                <select id="sel">
+                  <option value="0"> Pilihan menu makanan</option>
+                    <optgroup label="Makanan Pedas">
+                        <option value="1">Ayam Geprek</option>
+                        <option value="2">Bebek Jontor</option>
+                    </optgroup>
+                    <optgroup label="Minuman">
+                      <option value="3">Es Teh</option>
+                      <option value="4">Es Cincau</option>
+                    </optgroup>
+                </select>
+              </td>
+              <tr>
+                <td>Pilihan Paket</td>
+                <td>
+                  <input type="radio" name="radiobutton" required>Paket Lengkap</input>
+                  <input type="radio" name="radiobutton" required>Paket Setengah</input>
+                </td>
+              </tr>
+            </tr>
+          </tr>
+        </tr>
+      </table>
+      <tr>
+        <td>
+        <input type="submit" id="submit"></input>
+        <input type="reset"></input>
+      </td>
+      </tr>
+    </form>
+  </body>
+</html>

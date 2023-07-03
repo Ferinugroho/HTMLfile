@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="text/javascript">
+      function tax(product_category, product_name, price) {
+        if (product_category == "Mobile") {
+          total_price = (12.5 / 100) * price + price;
+          alert("Total price of " + product_name + "is: Rp." + total_price);
+        }
+        if (product_category == "Medicine") {
+          total_price = price;
+          alert("Total Price of " + product_name + " is : Rp." + total_price);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      product_category = "Medicine";
+      tax(product_category, "Paracetamol", 8000);
+      product_category = "Mobile";
+      tax(product_category, "GV3", 3000);
+      tax(product_category, "XV5", 5000);
+    </script>
+  </body>
+</html>

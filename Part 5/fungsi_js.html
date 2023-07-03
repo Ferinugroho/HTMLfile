@@ -1,0 +1,38 @@
+/* Fungsi Javascript - Blok pernyataan dimana dia memiliki nama secara mandiri -
+Dibuat sebagai modul terpisah. - Built-in function - User-defined function 1.
+Built-in function - isNan() = menentukan apakah suatu parameter bukan angka. -
+ParseInt() = memparsing parameter string dan mengembalikan bilangan bulat yang
+sesuai x="5"; y = ParseInt(x); ParseFloat() = mengambil parameter string dan
+mengembalikan ke angka floting point; x = "6.2"; y = ParseFloat(x); - val(e) =
+evaluasi atau eksekusi parameter - prompt() = pengguna harus memasukan nilai -
+confirm() = memverifikasi / tugas*/
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Prompt()</h1>
+    <script>
+      var a, b, c;
+      a = parseInt(prompt("Enter number 1:"));
+      b = parseInt(prompt("Enter number 2:"));
+      c = a + b;
+      document.write(c);
+    </script>
+
+    <h1>Confirm()</h1>
+    <script type="text/javascript">
+      var response;
+      response = confirm("Apakah anda setuju?");
+      if (response == true) {
+        alert("Kamu bisa lanjut ketahap berikutnya");
+      } else {
+        alert("Tidak bisa melanjutkan");
+      }
+    </script>
+  </body>
+</html>

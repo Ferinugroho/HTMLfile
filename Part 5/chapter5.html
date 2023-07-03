@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form name="form1">
+      <table>
+        <tr>
+          <th colspan="2">Pesan tiket online</th>
+        </tr>
+        <td>Nama</td>
+        <td>
+          <input type="text" name="username" placeholder="Enter Your Name" required></input>
+        </td>
+        <tr>
+          <td>Tanggal Pesan</td>
+          <td><input type="date" id="bookingdate" required></input></td>
+        </tr>
+        <tr>
+          <td>Movie</td>
+          <td>
+            <select id="sel">
+              <Option value="0">Pilih Movie</Option>
+              <optgroup label="Drama">
+                <option value="1"> Comedy </option>
+                <option value="2">Horor</option>
+              </optgroup>
+              <optgroup label="Romantic">
+                <option value="1"> Fast and Farius </option>
+                <option value="2">Transformer</option>
+              </optgroup>
+              <optgroup label="Action">
+                <option value="1"> The Raid </option>
+                <option value="2">The Kingdom</option>
+              </optgroup></select></td></tr>
+              <tr>
+              <td>Waktu Tayang</td>
+              <td><select id="timing">
+                <option value="3">Pilih Waktu</option>
+                <option value="4">10.00AM</option>
+                <option value="5">12.00AM</option>
+              </select></td>
+            </tr>
+              <tr>
+                <td>Pilih Kelas</td>
+                <td>
+                  <input type="radio" name="rb" required>Platinum</input>
+                  <input type="radio" name="rb" required>Gold</input>
+                  <input type="radio" name="rb" required>Silver</input>
+                </td>
+              </tr>
+              <tr>
+                <td>Harga</td>
+                <td><input type="text" name="harga" disabled></input></td>
+              </tr>
+              <tr>
+                <td>Jumlah Tiket</td>
+                <td><input type="text" name="jumlah_tiket" placeholder="Masukan jumlah tiket" required></input></td>
+              </tr>
+              <tr>
+                <td>Total Harga</td>
+                <td><input type="text" name="totalharga" disabled></input></td>
+              </tr>
+            
+              <tr>
+                <td id="submit" type="submit"></td>
+                <td><input type="reset"></input></td>
+              </tr>
+
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
