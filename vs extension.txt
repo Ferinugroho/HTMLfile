@@ -1,0 +1,7 @@
+1. Prettier => setting
+2. color highligh
+3. image preview
+4. auto rename tag
+5. live server
+6. 
+
