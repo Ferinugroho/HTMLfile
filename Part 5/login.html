@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <input type="password" value="password" id="InputPassword">
+<input type="checkbox" onclick="spp()">Show Password
+</input>
+<script>
+function spp(){
+  var sp = document.getElementById("InputPassword");
+  if (sp.type === "password"){
+    sp.type = "text";
+  }else{
+    sp.type = "password"
+  }
+}
+</script>
+</body>
+</html>
